@@ -194,11 +194,12 @@ section{
     color:var(--accent);
 }
 /* Projects */
-.project-grid{
+.projects-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,320px));
+    grid-template-columns:repeat(auto-fit,minmax(280px,300px));
     justify-content:center;
     gap:25px;
+    margin-top:40px;
 }
 .project-card{
     background:#1f1f1f;
@@ -229,7 +230,7 @@ section{
     transform:translate(-50%,-50%);
     width:70px;
     height:70px;
-    border: radius 50%;
+    border-radius:50%;
     background:rgba(255,255,255,.85);
     color:black;
     display:flex;
