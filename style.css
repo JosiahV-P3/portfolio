@@ -145,6 +145,9 @@ section{
 /* Button */
 .buttons{
     margin-top:30px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
 }
 .primary-btn{
     display:inline-block;
@@ -157,6 +160,20 @@ section{
 }
 .primary-btn:hover{
     background:var(--accent-dark);
+    transform:translateY(-3px);
+}
+.secondary-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#333;
+    color:white;
+    padding:14px 24px;
+    border-radius:20px;
+    transition:.3s;
+    border:1px solid rgba(255,255,255,.1);
+}
+.secondary-btn:hover{
+    background:#444;
     transform:translateY(-3px);
 }
 /* Profile Pic */
