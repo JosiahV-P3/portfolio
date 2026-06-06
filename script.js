@@ -62,4 +62,21 @@ document.addEventListener('keydown', function(event){
     if(event.key === 'Escape'){
         closeVideo();
     }
-})
+});
+function copyDiscord(){
+    navigator.clipboard.writeText(
+        "@totallynotsiah"
+    );
+    const notification = 
+        document.getElementById(
+            "copyNotification"
+        );
+    notification.classList.add(
+        "show"
+    );
+    setTimeout(function(){
+        notification.classList.remove(
+            "show"
+        );
+    }, 2500);
+}

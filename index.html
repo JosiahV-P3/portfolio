@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
@@ -120,14 +121,47 @@
     </div>
 </section>
 <section id="contact">
-    <h2 class="section-title">Contact <span>Me</span></h2>
-    <div class="contact-box">
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <h2 class="section-title">Connect <span>With Me</span></h2>
+    <div class="contact-card">
+        <div class="contact-header">
+            <i class="fa fa-wifi" style="font-size:48px;color:#1f7a4d;"></i> 
+            NETWORKING_CONNECTIONS
+        </div>
+        <div class="contact-grid">
+            <a 
+                href="https://github.com/JosiahV-P3"
+                target="_blank"
+                class="contact-link">
+                <div class="contact-icon"><i class="fa-brands fa-github" style="font-size:48px;color:#1f7a4d;"></i>
+                </div>
+                <h3>GitHub</h3>
+                <p>@JosiahV-P3</p>
+            </a>
+            <a
+                href="https://www.linkedin.com/in/josiah-b-hughes"
+                target="_blank"
+                class="contact-link">
+                <div class="contact-icon"><i class="fa-brands fa-linkedin" style="font-size:48px;color:#1f7a4d;"></i></div>
+                <h3>LinkedIn</h3>
+                <p>Josiah Hughes</p>
+            </a>
+            <a
+                href="mailto:josiah.hughes.b@gmail.com"
+                class="contact-link">
+                <div class="contact-icon"><i class="fa-regular fa-envelope" style="font-size:48px;color:#1f7a4d;"></i></div>
+                <h3>Email</h3>
+                <p>josiah.hughes.b@gmail.com</p>
+            </a>
+            <div
+                class="contact-link"
+                onclick="copyDiscord()">
+                <div class="contact-icon">
+                    <i class="fa-brands fa-discord" style="font-size:48px;color:#1f7a4d;"></i>
+                </div>
+                <h3>Discord</h3>
+                <p>@totallynotsiah</p>
+            </div>
+        </div>
     </div>
 </section>
 <div id="videoModal" class="video-modal">
@@ -140,6 +174,11 @@
             controls>
         </video>
     </div>
+</div>
+<div
+    id="copyNotification"
+    class="copy-notification">
+    Username Copied to Clipboard
 </div>
 <script src="script.js"></script>
 </body>
