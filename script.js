@@ -51,7 +51,7 @@ function closeVideo(){
 }
 //when clicking outside the pop-up video player the video closes
 const modal =
-    document.getElementalById('vieoModal');
+    document.getElementById('videoModal');
 modal.addEventListener('click', function(event){
     if(event.target === modal){
         closeVideo();
