@@ -168,3 +168,118 @@ section{
     box-shadow:0 15px 35px rgba(0,0,0,.3);
 }
 /* Section Titles */
+.section-title{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:50px;
+}
+.section-title span{
+    color:var(--accent);
+}
+/* Projects */
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto0fit,minmax(280px,1fr));
+    gap:20px;
+}
+.project-card{
+    background:var(--card);
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.3s;
+}
+.project-card:hover{
+    transform:translateY(-8px);
+}
+/* Skills */
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fir,minmax(200px,1fr));
+    gap:20px;
+}
+.skill{
+    background:var(--card);
+    padding:25px;
+    text-align:center;
+    border-radius:20px;
+    font-weight:600;
+    transition:.3s;
+}
+.skill:hover{
+    transform:translateY(-5px);
+}
+/* About */
+.about-box{
+    background:var(--card);
+    padding:40px;
+    border-radius:25px;
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+}
+/* Contact */
+.contact-box{
+    max-width:700px;
+    margin:auto;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+input,textarea{
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    font-size:1rem;
+}
+textarea{
+    min-height:150px;
+    resize:vertical;
+}
+button{
+    background:var(--accent);
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+button:hover{
+    background:var(--accent-dark);
+}
+/* Mobile formating */
+@media(max-width:900px){
+    header{
+        height:auto;
+        padding:15px;
+    }
+    .logo{
+        position:static;
+        margin-bottom:10px;
+        text-align:center;
+    }
+    header{
+        flex-direction:column;
+    }
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .hero-card{
+        flex-direction:column;
+        text-align:center;
+    }
+    .hero-right img{
+        width:250px;
+        height:320px;
+    }
+    .hero-left h1{
+        font-size:3rem;
+    }
+    .tags{
+        justify-content:center;
+    }
+}
